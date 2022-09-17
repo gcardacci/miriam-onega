@@ -1,0 +1,20 @@
+{
+	"name": "miriam-onega",
+	"version": "0.2209.17",
+	"private": true,
+	"dependencies": {
+		"next": "12.3.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"devDependencies": {
+		"eslint": "8.23.1",
+		"eslint-config-next": "12.3.0"
+	},
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"lint": "next lint",
+		"start": "next start"
+	}
+}

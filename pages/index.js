@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
+		<div>
 			<Head>
 				<title>
 					Miriam Onega
@@ -18,31 +18,33 @@ export default function Home() {
 
 				<link
 					href='/favicon.ico'
-					rel='icon'
+					rel='shortcut icon'
 				/>
 			</Head>
 
-			<main className={styles.main}>
-				<h1 className={styles.title}>
-					¡Bienvenido a mi espacio!
-				</h1>
+			<main>
+				<div style={{
+					margin: '25px 0'
+				}}>
+					<Image
+						alt='Miriam Onega Logo'
+						height={274}
+						src='/miriam-onega.png'
+						width={390}
+					/>
+				</div>
 
-				<Image
-					alt='Miriam Onega Logo'
-					height={500}
-					src='/Miriam Onega.png'
-					width={500}
-				/>
+				<div style={{ marginTop: '100px' }}>
+					<Link href='/books/ser-resiliente'>
+						<div className={styles.grid}>
+							<a className={styles.card}>
+								<h2>Ser Resiliente &rarr;</h2>
 
-				<Link href='/books/ser-resiliente'>
-					<div className={styles.grid}>
-						<a className={styles.card}>
-							<h2>Ser Resiliente &rarr;</h2>
-
-							<p>Mi libro</p>
-						</a>
-					</div>
-				</Link>
+								<p>Mi libro</p>
+							</a>
+						</div>
+					</Link>
+				</div>
 			</main>
 		</div>
 	)

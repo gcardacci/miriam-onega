@@ -1,6 +1,6 @@
-import Layout from '../components/Layout/Layout'
-import '../components/Layout/Header/Header.css'
-import '../styles/globals.css'
+import Layout from './components/Layout/Layout.jsx'
+import './components/Layout/Header/Header.css';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
 	return (

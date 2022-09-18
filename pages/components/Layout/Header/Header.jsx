@@ -1,7 +1,15 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
+
+const buttonList = [{
+	description: 'Inicio',
+	goToPage: '/'
+}, {
+	description: 'Libros',
+	goToPage: '/books'
+}]
 
 export default function Header() {
 	/* ===== State ===== */
@@ -20,12 +28,28 @@ export default function Header() {
 		setNavVisibility(prevState => !prevState);
 	};
 
+	function renderNavButtons() {
+		return buttonList.map(b => {
+			const { description, goToPage } = b;
+
+			return (
+				<Link
+					href={goToPage}
+					key={description}
+				>
+					<a onClick={() => setNavVisibility(false)}>
+						{description}
+					</a>
+				</Link>
+			)
+		})
+	}
+
 	function renderToggleButton() {
 		if (isMobile) {
 			return (
 				<Image
 					alt='Toggle button'
-					className='toggle-button'
 					height={50}
 					onClick={toggleNav}
 					src='/icons/menu-outline.svg'
@@ -60,17 +84,7 @@ export default function Header() {
 				unmountOnExit
 			>
 				<nav className='header-nav'>
-					<Link href='/'>
-						<a>
-							Inicio
-						</a>
-					</Link>
-
-					<Link href='/books'>
-						<a>
-							Libros
-						</a>
-					</Link>
+					{renderNavButtons()}
 				</nav>
 			</CSSTransition>
 		</header>

@@ -1,9 +1,10 @@
 .header-component {
-	background-color: #282c34;
+	background-color: #F3E1D3;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	z-index: 1;
 }
 
 .header-component.is-desktop {
@@ -36,14 +37,9 @@
 	margin-right: 10px !important;
 }
 
-.header-component.is-mobile .toggle-button {
-	color: #FFFFFF;
-}
-
 .header-nav a {
-	color: #FFFFFF;
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 22px;
+	font-weight: 600;
 	transition: 0.5s;
 	text-decoration: none;
 }
@@ -56,7 +52,7 @@
 	.header-nav {
 		grid-row-gap: 25px;
 		padding: 30px 0 30px;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 	}
 }
 

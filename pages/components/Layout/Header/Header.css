@@ -1,5 +1,5 @@
 .header-component {
-	background-color: #F3E1D3;
+	background-color: #FAF0E8;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	position: fixed;
 	top: 0;
@@ -15,10 +15,12 @@
 .header-component.is-desktop > .header-nav {
 	align-items: center;
 	display: flex;
+	height: 100%;
+	justify-content: center;
 }
 
 .header-component.is-desktop > .header-nav > a {
-	padding: 25px;
+	padding: 0 40px;
 }
 
 .header-component.is-mobile {

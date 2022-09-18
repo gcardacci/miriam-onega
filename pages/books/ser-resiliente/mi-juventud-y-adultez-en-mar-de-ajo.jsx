@@ -1,4 +1,5 @@
 import VideoContainer from '../../components/VideoContainer.jsx';
+import WritingText from '../../components/WritingText.jsx';
 import Image from 'next/image';
 
 export default function MiJuventudYAdultezEnMarDeAjo() {
@@ -7,7 +8,7 @@ export default function MiJuventudYAdultezEnMarDeAjo() {
 			<Image
 				alt='Ser Resiliente'
 				height={160}
-				src='/books/ser-resiliente.png'
+				src='/books/ser-resiliente/ser-resiliente.png'
 				width={497}
 			/>
 
@@ -15,8 +16,11 @@ export default function MiJuventudYAdultezEnMarDeAjo() {
 				Capítulo
 			</div>
 
-			<div className='page-subtitle'>
-				&quot;Mi juventud y adultez en Mar de Ajó&quot;
+			<div className='chapter-name'>
+				<WritingText
+					msg='"Mi juventud y adultez en Mar de Ajó"'
+					speed={75}
+				/>
 			</div>
 
 			<VideoContainer src='https://www.youtube.com/embed/3bYVNZzONq0'/>

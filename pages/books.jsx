@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const bookList = [{
 	description: 'Mi libro',
-	image: 'ser-resiliente.png',
+	image: 'ser-resiliente/ser-resiliente.png',
 	pageName: 'ser-resiliente'
 }]
 

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
 	return (
@@ -17,7 +16,7 @@ export default function Home() {
 				/>
 
 				<link
-					href='/favicon.ico'
+					href='/favicon.png'
 					rel='shortcut icon'
 				/>
 			</Head>
@@ -28,22 +27,10 @@ export default function Home() {
 				}}>
 					<Image
 						alt='Miriam Onega Logo'
-						height={274}
-						src='/miriam-onega.png'
-						width={390}
+						height={500}
+						src='/inicio.png'
+						width={500}
 					/>
-				</div>
-
-				<div style={{ marginTop: '100px' }}>
-					<Link href='/books/ser-resiliente'>
-						<div className={styles.grid}>
-							<a className={styles.card}>
-								<h2>Ser Resiliente &rarr;</h2>
-
-								<p>Mi libro</p>
-							</a>
-						</div>
-					</Link>
 				</div>
 			</main>
 		</div>

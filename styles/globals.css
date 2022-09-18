@@ -22,13 +22,20 @@ a {
 
 .layout-component .layout-content {
 	height: 100%;
-	padding: 80px 10px 0 10px
+	padding: 100px 10px 0 10px
 }
 
 .page {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+}
+
+.page .chapter-name {
+	font-family: 'EB Garamond', serif;
+	font-size: 25px;
+	font-style: italic;
+	text-align: center;
 }
 
 .page .page-grid {
@@ -39,8 +46,10 @@ a {
 }
 
 .page .page-subtitle {
+	font-family: 'EB Garamond', serif;
 	font-size: 25px;
-	padding: 25px 0;
+	padding: 35px 0 10px 0;
+	text-align: center;
 }
 
 .page .page-title {

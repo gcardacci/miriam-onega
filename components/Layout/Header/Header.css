@@ -1,0 +1,82 @@
+.header-component {
+	background-color: #282c34;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
+.header-component.is-desktop {
+	height: 80px;
+	padding: 0 25px;
+}
+
+.header-component.is-desktop > .header-nav {
+	align-items: center;
+	display: flex;
+}
+
+.header-component.is-desktop > .header-nav > a {
+	padding: 25px;
+}
+
+.header-component.is-mobile {
+	display: flex;
+	flex-direction: column;
+}
+
+.header-component.is-mobile > .header-nav {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-component.is-mobile > span {
+	align-self: end;
+	margin-right: 10px !important;
+}
+
+.header-component.is-mobile .toggle-button {
+	color: #FFFFFF;
+}
+
+.header-nav a {
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: 500;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.header-nav a:hover {
+	transform: scale(1.1);
+}
+
+@media (max-width: 699px) {
+	.header-nav {
+		grid-row-gap: 25px;
+		padding: 30px 0 30px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+}
+
+.navAnimation-enter {
+	opacity: 0;
+	transform: scale(0.5);
+}
+
+.navAnimation-enter-active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 350ms, transform 350ms;
+}
+
+.navAnimation-exit {
+	opacity: 1;
+}
+
+.navAnimation-exit-active {
+	opacity: 0;
+	transform: scale(0.5);
+	transition: opacity 350ms, transform 350ms;
+}

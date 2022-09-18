@@ -1,3 +1,9 @@
 export default function SerResiliente() {
-	return <div>Ser Resiliente</div>
+	return (
+		<div className='page'>
+			<div className='page-title'>
+				Ser Resiliente
+			</div>
+		</div>
+	)
 }
